@@ -1,0 +1,216 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f0f0f0;
+    color: #000000;
+    /* background-image: url("img/bg3.jpg");  */
+    /* background: linear-gradient(to bottom, #a30426, #0c0b2b); */
+    background-color: rgb(1,11,31);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-color 2s ease;
+    min-height: 100vh;
+}
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0c, 0b, 2b, 0.5); /* Adjust transparency by changing the alpha value */
+    z-index: -1; /*Ensures the overlay does not block content  */
+}
+
+header {
+    background-color: rgb(1,11,31);
+    color: white;
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 14pt;
+    margin-left: -20px;
+    margin-right: -30px;
+    margin-top: -20px;
+}
+header nav ul li:hover {
+    /* Styles for the red line on hover */
+    border-bottom: 3px solid red; /* Example: Solid red line */
+  }
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styles for the red line under navigation links */
+header nav ul li {
+    position: relative; /* Needed for pseudo-element */
+  }
+  header nav ul li a {
+    padding-bottom: 5px; /* Space for the line */
+  }
+  header nav ul li a:after {
+    content: "";
+    display: block; /* Make it visible */
+    width: 0%; /* No line initially */
+    height: 2px; /* Line thickness */
+    background-color: red;
+    position: absolute; /* Position under the link */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Start from left edge */
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+  }
+  
+  /* Add red line to the current page link */
+  header nav ul li.current a:after {
+    width: 100%; /* Full width for current page */
+  }
+h1{
+    margin-top: 200px;
+    text-align: center;
+    color: white;
+    font-size: 50pt;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+h2{
+    text-align: center;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#chaseContainer {
+    border: white;
+    margin: 0px;
+    text-align: center;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(165, 1, 70);
+    border-radius: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-color: white;
+    border-width: 1pt;
+  
+    
+}
+
+#soundButton {
+    background-color:#3c515f;  /* Deep blue background */
+    color: white;  /* White text */
+    padding: 30px 40px;  /* Padding around the text */
+    font-size: 16px;  /* Font size */
+    cursor: pointer;  /* Cursor indicates it’s clickable */
+    border-radius: 15px;  /* Rounded corners */
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+    margin-top: 100px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border-color: white;
+
+}
+
+#soundButton:hover {
+    background-color: #c61414;  /* Slightly lighter blue when hovered */
+}
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .play-btn, .skip-btn {
+    /* background-color: rgb(1,11,31);  */
+    background-color:  rgb(165, 1, 70);
+    border-width: 1pt;
+    color: white; /* White text color for buttons */
+    padding: 10px 20px; /* Padding around the text for buttons */
+    font-size: 16px; /* Font size for buttons */
+    cursor: pointer; /* Indicates buttons are clickable */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect on buttons */
+    margin: 0 55px;
+    border: none;
+  }
+  
+  .play-btn:hover, .skip-btn:hover {
+    background-color: #7c7474; /* Slightly lighter blue when hovered for buttons */
+  }
+  
+  #audioSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    color: red;
+    height: 16px;
+    border-radius: 50%;
+    background-color: red; /* Red color for slider thumb */
+    cursor: pointer; /* Indicate draggable element */
+  }
+  #audioSlider::-webkit-slider-thumb {
+    background-color: red;
+  }
+  
+  #audioSlider::-webkit-slider-track {
+    background-color: #ddd;
+    height: 5px;
+    width: 30px;
+  }
+
+  #about-container{
+    border: 2px solid white;
+    margin: 0 auto;
+    text-align:center;
+    padding: 20px;
+    background-color: #3c515f;
+    border-radius: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20pt;
+    color: white;
+
+  }

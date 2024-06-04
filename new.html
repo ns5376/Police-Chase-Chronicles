@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>New Episode</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            margin-top: 0px;
+            margin-bottom: 100px;w
+        }
+        body {
+            background: linear-gradient(to right, #010b1f 50%, #3c515f 50%);
+        }
+    </style>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.35/Tone.min.js"></script> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="new.html">New Episode</a></li>
+                <li><a href="about.html">About the Show</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="episode-container">
+            <h1 style="text-align: center; color: white;">New Episode</h1>
+            <!-- <p style="text-align: center; color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper magna non diam rhoncus consectetur. Sed a magna orci. Donec ullamcorper quam non enim consectetur interdum.</p> -->
+            
+            <div id="chaseContainer">
+                <audio id="audioPlayer" controls style="display: none;"> <source src="audio/final.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="audio-controls">
+                  <button id="playButton" class="play-btn">play</button>
+                  <input type="range" id="audioSlider" min="0" max="100" value="0" step="0.1" style="width: 700px; height: 10px;">
+
+<style>
+    #audioSlider {
+        -webkit-appearance: none;  /* Override default CSS styles */
+        appearance: none;
+        width: 400px; /* Width of the slider */
+        height: 10px; /* Height of the slider */
+        background: #f0f0f0; /* Light grey track, change this if you want another color */
+        outline: none; /* Removes the outline */
+        opacity: 0.7; /* Partial transparency */
+        transition: opacity .2s;
+        border-radius: 15px;
+    }
+
+    #audioSlider:hover {
+        opacity: 1; /* Full opacity on hover */
+    }
+
+    #audioSlider::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Removes default style */
+        appearance: none;
+        width: 15px; /* Width and height of the thumb */
+        height: 15px;
+        background: rgb(1,11,31); /* Blue color for the thumb, change this if you want another color */
+        cursor: pointer; /* Cursor on hover */
+        border-radius: 50%; /* Rounded corners for the thumb */
+        margin-top: -2px;
+    }
+
+    #audioSlider::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        background: #0f3460;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #audioSlider::-webkit-slider-runnable-track {
+        background: #f0f0f0;
+        height: 10px;
+        border-radius: 15px;
+    }
+
+    #audioSlider::-moz-range-track {
+        background: #f0f0f0;
+        height: 10px;
+        border-radius: 15px;
+    }
+    #chaseContainer {
+            border: 2px solid white;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #3c515f;
+            border-radius: 15px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+</style>
+
+                    <button id="skipButton" class="skip-btn">skip 5s</button>
+                </div>
+              </div>
+        </section>
+        
+    </main>
+   
+    <script src="script.js"></script>
+</body>
+</html>
