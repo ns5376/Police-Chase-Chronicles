@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     audioPlayer.addEventListener('timeupdate', () => {
         const currentTime = audioPlayer.currentTime;
 
-        if (currentTime > 10.5 && currentTime < 12) {
+        if (currentTime > 10.5 && currentTime < 11.5) {
             document.body.style.background = "rgba(255, 255, 255, 0.8)"; // Change to solid color
         } else if (currentTime > 17 && currentTime < 17.5) {
             document.body.style.background = 'linear-gradient(to right, #ff0000 50%, #0000ff 50%)'; // Change to another solid color
