@@ -214,3 +214,19 @@ body {
     color: white;
 
   }
+  @media (max-width: 768px) {
+    header nav ul li {
+        display: block; /* Stack nav items under each other on smaller screens */
+        margin-right: 0;
+        text-align: center; /* Center align text for mobile nav */
+        font-size: 10em;
+    }
+
+    h1, h2 {
+        font-size: 8em; /* Smaller font size for mobile devices */
+    }
+
+    main, footer {
+        padding: 10px;
+    }
+}
